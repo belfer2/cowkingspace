@@ -3,84 +3,287 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meine Seite</title>
+  <title>COW KING SPACE</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-  <a href="#" class="logo">
-    <img src="https://placehold.co/40x40" alt="Logo">
-    <span>COW KING SPACE</span>
-  </a>
-
-  <div class="nav-right">
-    <ul class="nav-links">
-      <li><a href="#">Tarife</a></li>
-      <li><a href="#">Über uns</a></li>
-      <li><a href="#">Kontakt</a></li>
-    </ul>
-
-    <a href="#" class="cart-button">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-           stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <circle cx="9" cy="21" r="1"></circle>
-        <circle cx="20" cy="21" r="1"></circle>
-        <path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"></path>
-      </svg>
-      Warenkorb
+  <!-- Navbar -->
+  <nav>
+    <a href="#" class="logo">
+      <img src="https://placehold.co/40x40" alt="Logo">
+      <span>COW KING SPACE</span>
     </a>
-  </div>
-</nav>
 
-  <header class="hero">
-  <div class="hero-content">
-    <h1>Dein<br>Schreibtisch.<br>Dein<br>Königreich.</h1>
-    <p>
-      Arbeitsplätze und Meetingräume in Wien im Monats- oder Jahresabo.
-      Gebucht, geöffnet und abgerechnet mit der Cow King App.
-    </p>
-    <div class="hero-buttons">
-      <a href="#" class="btn btn-primary">Tarife ansehen</a>
-      <a href="#so-funktionierts" class="btn btn-secondary">So funktioniert's</a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="#tarife">Tarife</a></li>
+        <li><a href="#">Über uns</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+
+      <a href="#" class="cart-button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"></path>
+        </svg>
+        Warenkorb
+      </a>
     </div>
-  </div>
-</header>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Dein<br>Schreibtisch.<br>Dein<br>Königreich.</h1>
+      <p>
+        Arbeitsplätze und Meetingräume in Wien im Monats- oder Jahresabo.
+        Gebucht, geöffnet und abgerechnet mit der Cow King App.
+      </p>
+      <div class="hero-buttons">
+        <a href="#tarife" class="btn btn-primary">Tarife ansehen</a>
+        <a href="#so-funktionierts" class="btn btn-secondary">So funktioniert's</a>
+      </div>
+    </div>
+  </header>
 
   <main>
 
-    <section id="so-funktionierts" class="how-it-works">
-    <h2>So funktioniert's</h2>
-    <p class="section-intro">
+    <!-- So funktioniert's -->
+    <section id="so-funktionierts" class="section">
+      <h2>So funktioniert's</h2>
+      <p class="section-intro">
         Für Freelancer, Studierende, Leute zwischen zwei Projekten und kleine Teams,
         die einen Ort zum Arbeiten brauchen, aber kein eigenes Büro.
-    </p>
+      </p>
 
-    <ol class="steps">
+      <ol class="steps">
         <li>
-            <h3>Tarif wählen</h3>
-            <p>Such dir in der Karte einen Tarif aus und schließ das Abo online ab. Monatlich oder jährlich.</p>
+          <h3>Tarif wählen</h3>
+          <p>Such dir in der Karte einen Tarif aus und schließ das Abo online ab. Monatlich oder jährlich.</p>
         </li>
         <li>
-            <h3>Platz buchen</h3>
-            <p>In der Cow King App siehst du den Grundriss und buchst einen freien Platz oder einen Meetingraum.</p>
+          <h3>Platz buchen</h3>
+          <p>In der Cow King App siehst du den Grundriss und buchst einen freien Platz oder einen Meetingraum.</p>
         </li>
         <li>
-            <h3>Einchecken</h3>
-            <p>Mit dem QR-Code in der App öffnest du die Tür. Kaffee holen, hinsetzen, loslegen.</p>
+          <h3>Einchecken</h3>
+          <p>Mit dem QR-Code in der App öffnest du die Tür. Kaffee holen, hinsetzen, loslegen.</p>
         </li>
-    </ol>
+      </ol>
     </section>
 
-    <ul>
-      <li>Erster Punkt</li>
-      <li>Zweiter Punkt</li>
-      <li>Dritter Punkt</li>
-      <li>Vierter Punkt</li>
-      <li>Fünfter Punkt</li>
-    </ul>
+    <!-- Die Cow King App -->
+    <section id="app" class="section">
+      <h2>Die Cow King App</h2>
+      <p class="section-intro">
+        Unser eigentliches Produkt ist Software: eine App für iOS und Android plus
+        Web-Version, mit der du alles rund um deinen Arbeitsplatz erledigst.
+      </p>
+
+      <div class="app-content">
+        <ul class="features">
+          <li>
+            <h3>Plätze in Echtzeit buchen</h3>
+            <p>Grundriss ansehen, freien Platz wählen, Lieblingsplatz merken.</p>
+          </li>
+          <li>
+            <h3>Mit QR-Code einchecken</h3>
+            <p>Die App öffnet Eingangstür und Spind. Kein Schlüssel, keine Karte.</p>
+          </li>
+          <li>
+            <h3>Abo und Rechnungen</h3>
+            <p>Tarif wechseln, pausieren oder kündigen. Rechnungen als PDF.</p>
+          </li>
+          <li>
+            <h3>Meetingräume reservieren</h3>
+            <p>Stundenweise, mit Bildschirm und Set für Videokonferenzen.</p>
+          </li>
+          <li>
+            <h3>Team verwalten</h3>
+            <p>Zugänge vergeben, Kostenstellen setzen und die Auslastung sehen.</p>
+          </li>
+          <li>
+            <h3>Barrierefrei bedienbar</h3>
+            <p>Mit Screenreader, Tastatur und großer Schrift nutzbar.</p>
+          </li>
+        </ul>
+
+        <img class="app-image" src="https://placehold.co/400x700" alt="Screenshot der Cow King App">
+      </div>
+    </section>
+
+    <!-- Standorte -->
+    <section id="standorte" class="section">
+      <h2>Zwei Standorte in Wien</h2>
+      <p class="section-intro">
+        Mit Flex, Student und Team arbeitest du an beiden Standorten.
+        Bei Fix suchst du dir einen davon für deinen Schreibtisch aus.
+      </p>
+
+      <div class="locations">
+        <article class="location">
+          <img src="https://placehold.co/600x400" alt="Standort Neubau">
+          <h3>Neubau</h3>
+          <p>Ein Biedermeierhaus mit hohen Räumen und Holzböden. Unser Hauptsitz und der ruhigere der beiden Standorte.</p>
+          <dl class="location-details">
+            <dt>Adresse</dt>
+            <dd>Muhgasse 1, 1070 Wien (fiktiv)</dd>
+            <dt>Plätze</dt>
+            <dd>80 Arbeitsplätze, 4 Meetingräume</dd>
+            <dt>Anreise</dt>
+            <dd>U3 Neubaugasse, Radabstellplätze im Hof</dd>
+            <dt>Zugang</dt>
+            <dd>stufenlos, Lift, barrierefreies WC</dd>
+          </dl>
+        </article>
+
+        <article class="location">
+          <img src="https://placehold.co/600x400" alt="Standort Leopoldstadt">
+          <h3>Leopoldstadt</h3>
+          <p>Eine umgebaute Werkhalle mit viel Tageslicht, Telefonkabinen und dem größten Meetingraum für Workshops.</p>
+          <dl class="location-details">
+            <dt>Adresse</dt>
+            <dd>Kälberweg 7, 1020 Wien (fiktiv)</dd>
+            <dt>Plätze</dt>
+            <dd>50 Arbeitsplätze, 2 Meetingräume</dd>
+            <dt>Anreise</dt>
+            <dd>U2 Taborstraße, Radabstellplätze vor dem Haus</dd>
+            <dt>Zugang</dt>
+            <dd>ebenerdig, barrierefreies WC, Induktionsschleife im großen Meetingraum</dd>
+          </dl>
+        </article>
+      </div>
+
+      <p class="opening-hours">
+        Geöffnet Montag bis Freitag 7 bis 22 Uhr und Samstag 9 bis 18 Uhr.
+        Mit Fix kommst du rund um die Uhr hinein. Der Empfang ist werktags
+        von 9 bis 17 Uhr besetzt.
+      </p>
+    </section>
+
+    <!-- Abomodelle -->
+    <section id="tarife" class="section">
+      <h2>Abomodelle</h2>
+      <p class="section-intro">
+        Vier Tarife, alle im Abo. Die Preise gelten bei jährlicher Zahlung,
+        monatlich zahlst du rund 20 % mehr und bleibst flexibel.
+      </p>
+
+      <div class="tariffs">
+        <article class="tariff">
+          <div class="tariff-header">
+            <h3>Student</h3>
+            <div class="tariff-prices">
+              <div class="price">
+                <span class="price-amount">€ 47</span> <span class="price-unit">pro Monat</span>
+                <small>€ 564 jährlich im Voraus, 12 Monate Laufzeit</small>
+              </div>
+              <div class="price price-monthly">
+                <span class="price-amount">€ 59</span> <span class="price-unit">pro Monat</span>
+                <small>monatlich kündbar</small>
+              </div>
+            </div>
+          </div>
+          <p class="tariff-description">Für alle, die neben dem Studium einen ruhigen Platz brauchen. Gilt mit gültigem Studierendenausweis.</p>
+          <p class="tariff-access">8 Tage pro Monat</p>
+          <ul class="bullets">
+            <li>8 Tage pro Monat</li>
+            <li>beide Standorte</li>
+            <li>Kaffee und WLAN</li>
+            <li>Meetingräume ab € 15 pro Stunde</li>
+          </ul>
+        </article>
+
+        <article class="tariff">
+          <div class="tariff-header">
+            <h3>Flex</h3>
+            <div class="tariff-prices">
+              <div class="price">
+                <span class="price-amount">€ 119</span> <span class="price-unit">pro Monat</span>
+                <small>€ 1.428 jährlich im Voraus, 12 Monate Laufzeit</small>
+              </div>
+              <div class="price price-monthly">
+                <span class="price-amount">€ 149</span> <span class="price-unit">pro Monat</span>
+                <small>monatlich kündbar</small>
+              </div>
+            </div>
+          </div>
+          <p class="tariff-description">Freie Platzwahl an beiden Standorten, so oft du willst. Für Freelancer und alle mit wechselnden Arbeitstagen.</p>
+          <p class="tariff-access">unbegrenzt zu den Öffnungszeiten</p>
+          <ul class="bullets">
+            <li>unbegrenzt zu den Öffnungszeiten</li>
+            <li>2 Meetingraum-Stunden pro Monat</li>
+            <li>50 Druckseiten pro Monat</li>
+            <li>Kaffee und WLAN</li>
+          </ul>
+        </article>
+
+        <article class="tariff">
+          <div class="tariff-header">
+            <h3>Fix</h3>
+            <div class="tariff-prices">
+              <div class="price">
+                <span class="price-amount">€ 239</span> <span class="price-unit">pro Monat</span>
+                <small>€ 2.868 jährlich im Voraus, 12 Monate Laufzeit</small>
+              </div>
+              <div class="price price-monthly">
+                <span class="price-amount">€ 299</span> <span class="price-unit">pro Monat</span>
+                <small>monatlich kündbar</small>
+              </div>
+            </div>
+          </div>
+          <p class="tariff-description">Dein eigener Schreibtisch mit Monitor und versperrbarem Rollcontainer am Standort deiner Wahl.</p>
+          <p class="tariff-access">Zutritt rund um die Uhr</p>
+          <ul class="bullets">
+            <li>Zutritt rund um die Uhr</li>
+            <li>5 Meetingraum-Stunden pro Monat</li>
+            <li>nutzbar als Geschäftsadresse</li>
+            <li>Kaffee und WLAN</li>
+          </ul>
+        </article>
+
+        <article class="tariff">
+          <div class="tariff-header">
+            <h3>Team</h3>
+            <div class="tariff-prices">
+              <div class="price">
+                <span class="price-amount">€ 552</span> <span class="price-unit">pro Monat</span>
+                <small>€ 6.624 jährlich im Voraus, 12 Monate Laufzeit</small>
+              </div>
+              <div class="price price-monthly">
+                <span class="price-amount">€ 690</span> <span class="price-unit">pro Monat</span>
+                <small>monatlich kündbar</small>
+              </div>
+            </div>
+          </div>
+          <p class="tariff-description">Fünf Zugänge für kleine Firmen und Projektteams, verwaltet in einem gemeinsamen Konto mit Sammelrechnung.</p>
+          <p class="tariff-access">5 Zugänge mit freier Platzwahl</p>
+          <ul class="bullets">
+            <li>5 Zugänge mit freier Platzwahl</li>
+            <li>10 Meetingraum-Stunden pro Monat</li>
+            <li>Team-Verwaltung in der App</li>
+            <li>eine Rechnung für alle</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="good-to-know">
+        <h3>Gut zu wissen</h3>
+        <ul class="bullets">
+          <li>Weitere Meetingraum-Stunden buchst du in der App ab € 19 pro Stunde, mit Student ab € 15.</li>
+          <li>Monatsabos verlängern sich jeweils um einen Monat und sind zum Monatsende kündbar. Jahresabos laufen zwölf Monate und verlängern sich nur, wenn du das bestätigst.</li>
+          <li>Wenn du als Verbraucher:in bestellst, kannst du binnen 14 Tagen ohne Angabe von Gründen vom Vertrag zurücktreten. Details findest du in den <a href="lizenz.html">Lizenz- und Nutzungsbedingungen</a>.</li>
+          <li>Für mehr als fünf Personen im Team-Tarif kostet jeder weitere Zugang € 129 pro Monat. Schreib uns über das <a href="kontakt.html">Kontaktformular</a>.</li>
+        </ul>
+      </div>
+    </section>
+
   </main>
 
+  <!-- Footer -->
   <footer>
     <ul>
       <li><a href="#">Impressum</a></li>

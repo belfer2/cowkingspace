@@ -1,3 +1,4 @@
+/* ========== Grundlagen ========== */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,7 +15,7 @@ body {
   color: #333;
 }
 
-/* Navbar */
+/* ========== Navbar ========== */
 nav {
   background: #333;
   padding: 1rem 2rem;
@@ -81,8 +82,7 @@ nav {
   height: 20px;
 }
 
-/* Header */
-/* Hero */
+/* ========== Hero ========== */
 .hero {
   min-height: 80vh;
   display: flex;
@@ -116,7 +116,7 @@ nav {
   gap: 1rem;
 }
 
-/* Buttons */
+/* ========== Buttons ========== */
 .btn {
   display: inline-block;
   padding: 0.8rem 1.5rem;
@@ -145,36 +145,67 @@ nav {
   background: rgba(255, 255, 255, 0.15);
 }
 
-/* Hauptinhalt */
+/* ========== Hauptinhalt ========== */
 main {
   max-width: 800px;
-  margin: 2rem auto;
+  margin: 3rem auto;
   padding: 0 1rem;
 }
-
 
 main p {
   margin-bottom: 1.5rem;
 }
 
-main ul {
-  padding-left: 1.5rem;
+/* ========== Abschnitte – gemeinsame Optik ========== */
+.section + .section {
+  margin-top: 4rem;
 }
 
-/* So funktioniert's */
-.how-it-works {
-  margin-bottom: 3rem;
-}
-
-.how-it-works h2 {
+.section h2 {
   font-size: 2rem;
+  line-height: 1.2;
   margin-bottom: 1rem;
 }
 
 .section-intro {
   font-size: 1.1rem;
+  color: #555;
+  max-width: 650px;
+  margin-bottom: 2rem;
 }
 
+.section h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.section h3 + p {
+  margin-bottom: 0;
+}
+
+/* ========== Einfache Bullet-Liste (wiederverwendbar) ========== */
+.bullets {
+  list-style: none;
+}
+
+.bullets li {
+  position: relative;
+  padding-left: 1.25rem;
+  margin-bottom: 0.4rem;
+}
+
+.bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: #333;
+}
+
+/* ========== So funktioniert's ========== */
 .steps {
   list-style: none;
   counter-reset: step;
@@ -204,15 +235,165 @@ main ul {
   font-weight: bold;
 }
 
-.steps h3 {
-  margin-bottom: 0.5rem;
+/* ========== Cow King App ========== */
+.app-content {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 2rem;
+  align-items: center;
 }
 
-.steps p {
+.features {
+  list-style: none;
+}
+
+.features li {
+  position: relative;
+  padding-left: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.features li:last-child {
   margin-bottom: 0;
 }
 
-/* Footer */
+.features li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: #333;
+}
+
+.app-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+/* ========== Standorte ========== */
+.locations {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.location img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.location-details {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  margin-top: 1.25rem;
+  font-size: 0.95rem;
+}
+
+.location-details dt,
+.location-details dd {
+  padding: 0.5rem 0;
+  border-top: 1px solid #ddd;
+}
+
+.location-details dt {
+  font-weight: bold;
+}
+
+.opening-hours {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  padding: 1.25rem 1.5rem;
+  background: #f4f4f4;
+  border-radius: 8px;
+}
+
+/* ========== Abomodelle ========== */
+.tariffs {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.tariff {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.tariff-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tariff h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0;
+}
+
+.tariff-prices {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.price {
+  text-align: right;
+  max-width: 170px;
+}
+
+.price-amount {
+  font-size: 1.5rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.price-unit {
+  font-size: 0.9rem;
+}
+
+.price small {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.8rem;
+  line-height: 1.3;
+  color: #666;
+}
+
+.price-monthly {
+  color: #666;
+}
+
+.price-monthly .price-amount {
+  font-size: 1.2rem;
+}
+
+.tariff-description {
+  margin-bottom: 0.75rem;
+}
+
+.good-to-know {
+  margin-top: 2.5rem;
+}
+
+.good-to-know h3 {
+  margin-bottom: 0.75rem;
+}
+
+.good-to-know a {
+  color: #333;
+}
+
+/* ========== Footer ========== */
 footer {
   background: #333;
   color: #fff;
@@ -236,4 +417,18 @@ footer a {
 
 footer a:hover {
   color: #fff;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 700px) {
+  .app-content,
+  .locations {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .price {
+    text-align: left;
+  }
 }

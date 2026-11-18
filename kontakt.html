@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt – COW KING SPACE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="index.html" class="logo">
+      <img src="https://placehold.co/40x40" alt="Logo">
+      <span>COW KING SPACE</span>
+    </a>
+
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html#tarife">Tarife</a></li>
+        <li><a href="#">Über uns</a></li>
+        <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
+      </ul>
+
+      <a href="#" class="cart-button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"></path>
+        </svg>
+        Warenkorb
+      </a>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <header class="hero hero-small">
+    <div class="hero-content">
+      <h1>Kontakt</h1>
+      <p>Fragen zu Tarifen, Firmenkonten oder Barrierefreiheit? Schreib uns oder komm vorbei.</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="contact-grid">
+
+      <!-- Linke Spalte: Formular -->
+      <section class="contact-form-column">
+        <h2>Schreib uns</h2>
+
+        <form class="contact-form" action="#" method="post">
+          <div class="form-field">
+            <label for="name">Name <span class="field-hint">(Pflichtfeld)</span></label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+
+          <div class="form-field">
+            <label for="email">E-Mail-Adresse <span class="field-hint">(Pflichtfeld)</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+
+          <div class="form-field">
+            <label for="telefon">Telefonnummer <span class="field-hint">(optional)</span></label>
+            <input type="tel" id="telefon" name="telefon" autocomplete="tel">
+          </div>
+
+          <div class="form-field">
+            <label for="thema">Worum geht's? <span class="field-hint">(Pflichtfeld)</span></label>
+            <select id="thema" name="thema" required>
+              <option value="" disabled selected>Bitte auswählen</option>
+              <option value="tarife">Frage zu Tarifen</option>
+              <option value="team">Firmenkonto oder Team</option>
+              <option value="besichtigung">Besichtigung eines Standorts</option>
+              <option value="barrierefreiheit">Feedback zur Barrierefreiheit</option>
+              <option value="datenschutz">Datenschutzfrage</option>
+              <option value="sonstiges">Etwas anderes</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="nachricht">Nachricht <span class="field-hint">(Pflichtfeld)</span></label>
+            <textarea id="nachricht" name="nachricht" rows="6" required></textarea>
+          </div>
+
+          <p class="form-note">
+            Wir verwenden deine Angaben nur, um deine Anfrage zu beantworten, und löschen sie
+            sechs Monate nach Abschluss. Mehr dazu in der
+            <a href="datenschutz.html">Datenschutzerklärung</a>.
+          </p>
+
+          <button type="submit" class="btn btn-dark">Nachricht senden</button>
+        </form>
+      </section>
+
+      <!-- Rechte Spalte: Kontaktdaten -->
+      <section class="contact-info">
+        <h2>So erreichst du uns</h2>
+
+        <dl class="contact-details">
+          <dt>E-Mail</dt>
+          <dd><a href="mailto:hallo@cowkingspace.example">hallo@cowkingspace.example</a></dd>
+
+          <dt>Telefon</dt>
+          <dd>
+            <a href="tel:+4310000000">+43 1 000 00 00</a> (fiktiv)<br>
+            werktags 9 bis 17 Uhr
+          </dd>
+
+          <dt>Antwortzeit</dt>
+          <dd>innerhalb von zwei Werktagen</dd>
+
+          <dt>Hauptsitz</dt>
+          <dd>
+            Cow King Space GmbH<br>
+            Muhgasse 1, 1070 Wien, Österreich (fiktiv)
+          </dd>
+
+          <dt>Zweiter Standort</dt>
+          <dd>Kälberweg 7, 1020 Wien (fiktiv)</dd>
+
+          <dt>Empfang</dt>
+          <dd>Montag bis Freitag 9 bis 17 Uhr an beiden Standorten</dd>
+        </dl>
+
+        <h3>Besondere Anliegen</h3>
+        <ul class="bullets">
+          <li>Barrierefreiheit: <a href="mailto:barrierefreiheit@cowkingspace.example">barrierefreiheit@cowkingspace.example</a></li>
+          <li>Datenschutz: <a href="mailto:datenschutz@cowkingspace.example">datenschutz@cowkingspace.example</a></li>
+          <li>Firmenkunden mit mehr als fünf Personen: Thema „Firmenkonto oder Team“ im Formular wählen</li>
+        </ul>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <ul>
+      <li><a href="#">Impressum</a></li>
+      <li><a href="#">Datenschutz</a></li>
+      <li><a href="#">AGB</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+      <li><a href="#">FAQ</a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>
